@@ -45,7 +45,7 @@ RUN mkdir -p /home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos
     mkdir -p /home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto
 
 # Cambiar propietario de los archivos al usuario appuser
-RUN chown -R appuser:appuser /root/ /home/rauly/
+RUN chown -R appuser:appuser /root/ /home/ubuntu/
 
 # Cambiar al usuario no-root
 USER appuser
