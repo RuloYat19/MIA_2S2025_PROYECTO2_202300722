@@ -511,7 +511,7 @@ func obtenerDiscos(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	carpeta := "/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos"
+	carpeta := "/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos"
 	var respuesta Respuesta
 
 	// Se verifica si la carpeta existe

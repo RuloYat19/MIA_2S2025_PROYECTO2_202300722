@@ -33,7 +33,7 @@ npm install vite@latest --force
 
 npm run dev
 
-/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722
+/home/ubuntu/MIA_2S2025_PROYECTO2_202300722
 
 // Para usar lo de Tailwind
 npm install -D tailwindcss postcss autoprefixer

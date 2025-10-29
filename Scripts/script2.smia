@@ -18,7 +18,7 @@ cat -file1=users.txt
 //Para el rep
 mount -path=Discos/disco1.mia -name=Particion1
 mkfs -type=full -id=221A
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/Reporte_Disk.png -name=disk
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/Reporte_Disk.png -name=disk
 
 mkdisk -size=15 -unit=K -path=Discos/disco1.mia
 
@@ -33,14 +33,14 @@ mount -path=Discos/disco1.mia -name=Particion1
 mount -path=Discos/disco1.mia -name=Particion5
 mount -path=Discos/disco1.mia -name=Particion6
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/Reporte_Disk.png -name=disk
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/Reporte_MBR.png -name=mbr
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/Reporte_Disk.png -name=disk
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/Reporte_MBR.png -name=mbr
 
 //Verificación del error en Comando CAT
-Mkdisk -size=50 -unit=M -fit=FF -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia
-fdisk -type=P -unit=b -name=Part11 -size=10485760 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -fit=BF
+Mkdisk -size=50 -unit=M -fit=FF -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia
+fdisk -type=P -unit=b -name=Part11 -size=10485760 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -fit=BF
 
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 mkgrp -name=usuarios
@@ -54,7 +54,7 @@ mkgrp -name=news
 cat -file1=/users.txt
 
 //Verificar que pasa con el comando mkusr
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 
@@ -74,7 +74,7 @@ mkusr -user="user2" -pass=abc -grp=usuarios
 cat -file1=/users.txt
 
 //Para verificar el comando RMUSR y CHGRP
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 mkgrp -name=usuarios
@@ -102,7 +102,7 @@ rmgrp -name=adm
 cat -file1=/users.txt
 
 //Para validar el inicio sesion con un usuario
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 mkgrp -name=realmadrid
@@ -115,7 +115,7 @@ logout
 login -user=raul -pass=moranuel -id=221A
 
 //Para verificar el comando MKDIR
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 
@@ -127,7 +127,7 @@ mkdir -p -path=/home/archivos/user/docs/usac
 mkdir -p -path=/home/archivos/carpeta1/carpeta2/carpeta3/carpeta4/carpeta5
 
 //Para verificar el comando MKFILE
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 
@@ -143,7 +143,7 @@ mkfile -path=/home/archivos/user/docs/Tarea2.txt -size=768
 cat -file1=/home/archivos/user/docs/Tarea2.txt
 
 #CONTENIDO DE UN ARCHIVO DE LA COMPUTADORA
-mkfile -path=/home/archivos/user/docs/Tarea3.txt -size=10 -cont=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/RAUL/NAME.txt
+mkfile -path=/home/archivos/user/docs/Tarea3.txt -size=10 -cont=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/RAUL/NAME.txt
 mkfile -path=/home/archivos/user/docs/Tarea3.txt -size=10 -cont=/home/ruloyat20/Escritorio/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/RAUL/NAME.txt
 
 #ERROR NO EXISTE RUTA
@@ -157,38 +157,38 @@ mkfile -r -path=/home/archivos/user/docs/usac/archivos/proyectos/fase1/entrada.t
 cat -file1=/home/archivos/user/docs/Tarea3.txt
 
 //Probar el comando Rep para Inodos
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r1_inode.jpg -name=inode
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r1_inode.jpg -name=inode
 
 mkdir -p -path=/home/archivos/user/docs/usac
 mkdir -p -path=/home/archivos/carpeta1/carpeta2/carpeta3/carpeta4/carpeta5
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r1_inode.jpg -name=inode
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r1_inode.jpg -name=inode
 
 //Probar el comando Rep para Bloques
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r2_block.jpg -name=block
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r2_block.jpg -name=block
 
 mkdir -p -path=/home/archivos/user/docs/usac
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r2_block.jpg -name=block
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r2_block.jpg -name=block
 
 mkdir -p -path=/home/archivos/carpeta1/carpeta2/carpeta3/carpeta4/carpeta5
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r2_block.jpg -name=block
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r2_block.jpg -name=block
 
 mkfile -path=/home/archivos/user/docs/Tarea.txt -size=75
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r2_block.jpg -name=block
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r2_block.jpg -name=block
 
 //Probar el comando Rep para el Bitmap de Inodos
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 mkdir -p -path=/home/archivos/user/docs/usac
@@ -197,10 +197,10 @@ mkdir -p -path=/home/archivos/carpeta1/carpeta2/carpeta3/carpeta4/carpeta5
 
 mkfile -path=/home/archivos/user/docs/Tarea.txt -size=75
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r3_bm_inode.txt -name=bm_inode
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r3_bm_inode.txt -name=bm_inode
 
 //Probar el comando Rep para el Bitmap de Bloques
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 mkdir -p -path=/home/archivos/user/docs/usac
@@ -209,14 +209,14 @@ mkdir -p -path=/home/archivos/carpeta1/carpeta2/carpeta3/carpeta4/carpeta5
 
 mkfile -path=/home/archivos/user/docs/Tarea.txt -size=75
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r4_bm_block.txt -name=bm_block
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r4_bm_block.txt -name=bm_block
 
 //Probar el comando Rep para el Superbloque
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r5_sb.jpg -name=sb
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r5_sb.jpg -name=sb
 
 mkdir -p -path=/home/archivos/user/docs/usac
 
@@ -224,10 +224,10 @@ mkdir -p -path=/home/archivos/carpeta1/carpeta2/carpeta3/carpeta4/carpeta5
 
 mkfile -path=/home/archivos/user/docs/Tarea.txt -size=75
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r5_sb.jpg -name=sb
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r5_sb.jpg -name=sb
 
 //Para probar el comando Rep para el File
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 
@@ -235,10 +235,10 @@ mkdir -p -path=/home/archivos/user/docs/usac
 
 mkfile -path=/home/archivos/user/docs/Tarea.txt -size=75
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r6_file.jpg -path_file_ls=/home/archivos/user/docs/Tarea.txt  -name=file
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r6_file.jpg -path_file_ls=/home/archivos/user/docs/Tarea.txt  -name=file
 
 //Para probar el comando Rep para el Tree
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 
@@ -246,10 +246,10 @@ mkdir -p -path=/home/archivos/user/docs/usac
 
 mkfile -path=/home/archivos/user/docs/Tarea.txt -size=75
 
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Reportes/p4_r8_tree.png -name=tree
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Reportes/p4_r8_tree.png -name=tree
 
 //Para verificar el comando CAT con archivos creados
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 

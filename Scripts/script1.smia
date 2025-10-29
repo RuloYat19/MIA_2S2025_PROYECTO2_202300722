@@ -1,10 +1,10 @@
-Mkdisk -size=50 -unit=M -fit=FF -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia
-fdisk -type=P -unit=b -name=Part11 -size=10485760 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -fit=BF
-fdisk -type=P -unit=b -name=Part12 -size=10485760 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -fit=BF
-#fdisk -name=Part11 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -add=500 -unit=b
-#fdisk -name=Part11 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -delete=full
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -name=Part11
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -name=Part12
+Mkdisk -size=50 -unit=M -fit=FF -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia
+fdisk -type=P -unit=b -name=Part11 -size=10485760 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia -fit=BF
+fdisk -type=P -unit=b -name=Part12 -size=10485760 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia -fit=BF
+#fdisk -name=Part11 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia -add=500 -unit=b
+#fdisk -name=Part11 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia -delete=full
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia -name=Part12
 #unmount -id=221A
 mkfs -id=221A
 mkfs -fs=3fs -id=222A
@@ -24,7 +24,7 @@ mkdir -p -path=/home/prueba/nivel14
 mkdir -p -path=/home/proyecto/copia
 
 #remove -path=/home/prueba
-#edit -content=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/CONT/NAME.txt -path=/home/prueba/Hola.txt
+#edit -content=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/CONT/NAME.txt -path=/home/prueba/Hola.txt
 #rename -path=/home/prueba/Hola.txt -name=Wenas.txt
 copy -path=/home/prueba -destino=/home/proyecto/copia
 
@@ -33,9 +33,9 @@ cat -file1=/home/prueba/Wenas.txt
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Mkdisk -size=50 -unit=M -fit=FF -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiskNumber1.mia
-fdisk -type=P -unit=b -name=Part11 -size=10485760 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiskNumber1.mia -fit=BF
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiskNumber1.mia -name=Part11
+Mkdisk -size=50 -unit=M -fit=FF -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiskNumber1.mia
+fdisk -type=P -unit=b -name=Part11 -size=10485760 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiskNumber1.mia -fit=BF
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiskNumber1.mia -name=Part11
 mkfs -id=221A
 login -user=root -pass=123 -id=221A
 
@@ -44,13 +44,13 @@ mkdir -p -path=/home/user/rauly/USAC/MIA/Directorio1/prueba/carpeta2
 mkdir -p -path=/home/user/rauly/USAC/MIA/Proyecto1
 
 mkdir -p -path=/home/user/rauly/USAC/MIA/Proyecto1/prueba
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Reportes/p4_r8_tree.png -name=tree
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Reportes/p4_r8_tree.png -name=tree
 
 mkdir -p -path=/home/user/rauly/USAC/MIA/Proyecto1/prueba/carpeta1
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Reportes/p4_r8_tree.png -name=tree
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Reportes/p4_r8_tree.png -name=tree
 
 mkdir -p -path=/home/user/rauly/USAC/MIA/Proyecto1/prueba/carpeta1
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Reportes/p4_r8_tree.png -name=tree
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Reportes/p4_r8_tree.png -name=tree
 
 
 mkdir -p -path=/home/prueba
@@ -69,7 +69,7 @@ mkdir -p -path=/home/proyecto/copia
 mkdir -p -path=/home/proyecto/copia/prueba
 
 copy -path=/home/prueba -destino=/home/proyecto/copia
-rep -id=221A -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Reportes/p4_r8_tree.png -name=tree
+rep -id=221A -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Reportes/p4_r8_tree.png -name=tree
 
 /home/proyecto/copia/prueba/nivel11/nivel21/arch4.txt
 /home/prueba/nivel11/nivel21/arch4.txt

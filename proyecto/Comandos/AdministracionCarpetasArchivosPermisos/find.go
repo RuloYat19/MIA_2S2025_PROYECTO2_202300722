@@ -73,7 +73,7 @@ func Find(parametros []string) string {
 				fmt.Println("FIND Error: No se pudieron guardar los resultados en el archivo.")
 				salida1 += "FIND Error: No se pudieron guardar los resultados en el archivo.\n"
 			} else {
-				contenido, err := os.ReadFile("/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Reportes/Find.txt")
+				contenido, err := os.ReadFile("/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Reportes/Find.txt")
 				if err != nil {
 					fmt.Println("Error al leer archivo:", err)
 					salida1 += "FIND ERROR: Hubo problemas al leer el archivo del Find.\n"
@@ -221,7 +221,7 @@ func searchRecursive(archivo *os.File, superbloque *Structs.Superbloque, indiceI
 
 func escribirResultadosArchivo(resultados []string) error {
 	// Ruta del archivo de salida
-	rutaArchivo := "/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Reportes/Find.txt"
+	rutaArchivo := "/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Reportes/Find.txt"
 
 	// Crear el directorio si no existe
 	dir := filepath.Dir(rutaArchivo)

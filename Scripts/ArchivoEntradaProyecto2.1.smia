@@ -4,75 +4,75 @@
 #  1: CREAR DISCOS Y VALIDAR ERRORES
 
 # ERROR: Parámetro incorrecto
-mkdisk -param=x -size=30 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoError.mia
+mkdisk -param=x -size=30 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoError.mia
 
 # ERROR: Tamaño incorrecto
-mkdisk -tamaño=3000 -unit=K -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoError.mia
+mkdisk -tamaño=3000 -unit=K -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoError.mia
 
 # Disco A - 25MB
-mkdisk -size=25 -unit=M -fit=FF -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoA.mia
+mkdisk -size=25 -unit=M -fit=FF -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoA.mia
 
 # Disco B - 30MB
-mkdisk -size=30 -unit=M -fit=BF -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoB.mia
+mkdisk -size=30 -unit=M -fit=BF -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoB.mia
 
 # Disco C - 15MB
-mkdisk -size=15 -unit=M -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoC.mia
+mkdisk -size=15 -unit=M -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoC.mia
 
 #  2: RMDISK - ELIMINAR DISCOS
 
 # ERROR: Disco no existe
-rmdisk -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoNoExiste.mia
+rmdisk -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoNoExiste.mia
 
 # Crear discos temporales para pruebas de eliminación
-mkdisk -size=10 -unit=M -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoTemp1.mia
-mkdisk -size=8 -unit=M -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoTemp2.mia
+mkdisk -size=10 -unit=M -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoTemp1.mia
+mkdisk -size=8 -unit=M -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoTemp2.mia
 
 # Eliminar discos temporales
-rmdisk -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoTemp1.mia
-rmdisk -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoTemp2.mia
+rmdisk -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoTemp1.mia
+rmdisk -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoTemp2.mia
 
 # ERROR: Intentar eliminar disco ya eliminado
-rmdisk -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoTemp1.mia
+rmdisk -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoTemp1.mia
 
 #  3: FDISK - CREAR PARTICIONES
 
 # ERROR: Ruta no encontrada
-fdisk -type=P -unit=M -name=PartError -size=10 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoError.mia -fit=BF
+fdisk -type=P -unit=M -name=PartError -size=10 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoError.mia -fit=BF
 
 # Disco A - 3 particiones primarias
-fdisk -type=P -unit=M -name=PartA1 -size=8 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoA.mia -fit=BF
-fdisk -type=P -unit=M -name=PartA2 -size=8 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoA.mia -fit=BF
-fdisk -type=P -unit=M -name=PartA3 -size=8 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoA.mia -fit=BF
+fdisk -type=P -unit=M -name=PartA1 -size=8 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoA.mia -fit=BF
+fdisk -type=P -unit=M -name=PartA2 -size=8 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoA.mia -fit=BF
+fdisk -type=P -unit=M -name=PartA3 -size=8 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoA.mia -fit=BF
 
 # ERROR: Límite de particiones primarias
-fdisk -type=P -unit=M -name=PartError -size=5 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoA.mia -fit=BF
+fdisk -type=P -unit=M -name=PartError -size=5 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoA.mia -fit=BF
 
 # Disco B - Partición extendida con lógicas
-fdisk -type=E -unit=M -name=PartExtB -size=20 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoB.mia -fit=BF
-fdisk -type=L -unit=M -name=PartB1 -size=5 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoB.mia -fit=BF
-fdisk -type=L -unit=M -name=PartB2 -size=5 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoB.mia -fit=BF
-fdisk -type=L -unit=M -name=PartB3 -size=5 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoB.mia -fit=BF
+fdisk -type=E -unit=M -name=PartExtB -size=20 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoB.mia -fit=BF
+fdisk -type=L -unit=M -name=PartB1 -size=5 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoB.mia -fit=BF
+fdisk -type=L -unit=M -name=PartB2 -size=5 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoB.mia -fit=BF
+fdisk -type=L -unit=M -name=PartB3 -size=5 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoB.mia -fit=BF
 
 # Disco C - 2 particiones
-fdisk -type=P -unit=M -name=PartC1 -size=8 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoC.mia
-fdisk -type=P -unit=M -name=PartC2 -size=6 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoC.mia
+fdisk -type=P -unit=M -name=PartC1 -size=8 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoC.mia
+fdisk -type=P -unit=M -name=PartC2 -size=6 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoC.mia
 
 # ERROR: Falta espacio
-fdisk -type=P -unit=M -name=PartError -size=20 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoC.mia
+fdisk -type=P -unit=M -name=PartError -size=20 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoC.mia
 
 #  4: MOUNT - MONTAR PARTICIONES
 
 # ERROR: Partición no existe
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoA.mia -name=PartNoExiste
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoA.mia -name=PartNoExiste
 
 # Montar particiones
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoA.mia -name=PartA1
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoA.mia -name=PartA2
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoB.mia -name=PartB1
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoC.mia -name=PartC1
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoA.mia -name=PartA1
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoA.mia -name=PartA2
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoB.mia -name=PartB1
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoC.mia -name=PartC1
 
 # ERROR: Partición ya montada
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/DiscoA.mia -name=PartA1
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/DiscoA.mia -name=PartA1
 
 # Ver particiones montadas
 mounted

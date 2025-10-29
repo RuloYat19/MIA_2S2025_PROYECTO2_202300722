@@ -1,7 +1,7 @@
-Mkdisk -size=50 -unit=M -fit=FF -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia
-fdisk -type=P -unit=b -name=Part11 -size=10485760 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -fit=BF
+Mkdisk -size=50 -unit=M -fit=FF -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia
+fdisk -type=P -unit=b -name=Part11 -size=10485760 -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia -fit=BF
 
-mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -name=Part11
+mount -path=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos/Disco1.mia -name=Part11
 mkfs -type=full -id=221A
 login -user=root -pass=123 -id=221A
 
@@ -15,7 +15,7 @@ mkfile -path=/home/archivos/user/docs/Tarea.txt -size=75
 mkfile -path=/home/archivos/user/docs/Tarea2.txt -size=768
 
 #ARCHIVO DE COMPUTADORA
-mkfile -path=/home/archivos/user/docs/Tarea3.txt -size=10 -cont=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/CONT/NAME.txt
+mkfile -path=/home/archivos/user/docs/Tarea3.txt -size=10 -cont=/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/CONT/NAME.txt
 
 #ERROR NO EXISTE RUTA
 mkfile -path="/home/archivos/noexiste/b1.txt"

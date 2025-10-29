@@ -59,7 +59,7 @@ func Journaling(parametros []string) string {
 			salida1 += "JOURNALING Error: Hubo problemas al mostrar el journaling.\n"
 		} else {
 
-			rutaJournaling := "/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Reportes/Journaling.md"
+			rutaJournaling := "/home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Reportes/Journaling.md"
 
 			reporteJournaling, err := os.Create(rutaJournaling)
 

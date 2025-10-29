@@ -40,9 +40,9 @@ COPY b.sh .
 RUN chmod +x b.sh
 
 # Crear la estructura de directorios que necesita el script
-RUN mkdir -p /home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos && \
-    mkdir -p /home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Reportes && \
-    mkdir -p /home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/proyecto
+RUN mkdir -p /home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos && \
+    mkdir -p /home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Reportes && \
+    mkdir -p /home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto
 
 # Cambiar propietario de los archivos al usuario appuser
 RUN chown -R appuser:appuser /root/ /home/rauly/
