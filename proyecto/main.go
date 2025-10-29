@@ -111,7 +111,7 @@ func getCadenaAnalizar(w http.ResponseWriter, r *http.Request) {
 	var status StatusResponse
 	var salida Salida
 
-	if r.Method == http.MethodGet {
+	if r.Method == http.MethodPost {
 		var entrada Entrada
 
 		if err := json.NewDecoder(r.Body).Decode(&entrada); err != nil {
