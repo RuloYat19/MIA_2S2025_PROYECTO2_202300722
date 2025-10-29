@@ -1,0 +1,18 @@
+#Antes de aplicar el comando copy
+home #664
+    |_____ user #664
+    |          |_____ documents #664
+    |                          |_____ a.txt #664
+    |                          |_____ b.txt #224
+    |_____ images #664
+
+#Después de aplicar el comando copy
+#Se copian aquellos que tengan 4-7
+home #664
+    |_____ user #664
+    |          |_____ documents #664
+    |                          |_____ a.txt #664
+    |                          |_____ b.txt #224
+    |_____ images #664
+                 |_____ documents #664
+                                 |_____ a.txt #664

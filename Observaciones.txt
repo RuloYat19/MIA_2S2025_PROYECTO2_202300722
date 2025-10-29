@@ -1,0 +1,49 @@
+// Errores a corregir o cosas por hacer 
+- Hacer que ignore los comentarios del script que empiezan con #
+- Modificar los archivos de los comandos para que se muestre de mejor manera en consola
+
+Validación que no cree las carpetas cuando no está el p
+
+Validación de inodos para crear más directorios
+
+// Preguntas foro
+Mensajes en pagina de salida y el comando CAT y Mounted // Preguntado
+Como es que debe de salir el comando CAT // Preguntado
+Si un user tiene comillas se agrega con comillas o sin comillas, y si sí, como sería la validación de dicho usuario //Preguntado
+Si el reporte de inodos tiene que mostrar todos los I_block o no es necesario // Preguntado
+Si es necesario poner los reportes en el frontend // Preguntado
+Si un directorio no tiene permiso de lectura como queda el arbol // Preguntado
+Si se tienen que tomar en cuenta el indice de lo que se eliminó, o de primero se elimina y luego se agrega // Preguntado
+
+Si en los discos tengo que mostrar las particiones montadas o formateadas
+Que información puedo poner en los discos y particiones
+
+Finiquitar el Copy y Move
+
+//Comandos para hacer lo del frontend
+sudo npm install
+sudo node install
+
+//Si falla
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+nvm install --lts
+nvm use --lts
+
+npm install vite@latest --force
+
+npm run dev
+
+/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722
+
+// Para usar lo de Tailwind
+npm install -D tailwindcss postcss autoprefixer
+
+// Problemas con el mkdir
+// Buscar cuantas veces está el directorio
+// Comparar tamaño para ver si son iguales
+// Comparar cada indice de los padres para ver si son iguales
+/home/user/rauly/USAC/MIA/Directorio1/prueba/carpeta1/arch1.txt
+/home/user/rauly/USAC/MIA/Proyecto1
+
+/home/user/rauly/USAC/MIA/Directorio1/prueba
+/home/user/rauly/USAC/MIA/Proyecto1/prueba

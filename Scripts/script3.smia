@@ -1,0 +1,30 @@
+Mkdisk -size=50 -unit=M -fit=FF -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia
+fdisk -type=P -unit=b -name=Part11 -size=10485760 -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -fit=BF
+
+mount -path=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/Discos/Disco1.mia -name=Part11
+mkfs -type=full -id=221A
+login -user=root -pass=123 -id=221A
+
+mkdir -path=/bin
+
+mkdir -p -path=/home/archivos/user/docs/usac
+
+mkdir -p -path=/home/archivos/carpeta1/carpeta2/carpeta3/carpeta4/carpeta5
+
+mkfile -path=/home/archivos/user/docs/Tarea.txt -size=75
+mkfile -path=/home/archivos/user/docs/Tarea2.txt -size=768
+
+#ARCHIVO DE COMPUTADORA
+mkfile -path=/home/archivos/user/docs/Tarea3.txt -size=10 -cont=/home/rauly/USAC/Archivos/MIA_2S2025_P2_202300722/Calificacion_MIA/CONT/NAME.txt
+
+#ERROR NO EXISTE RUTA
+mkfile -path="/home/archivos/noexiste/b1.txt"
+
+#ERROR NEGATIVO
+mkfile -path="/home/archivos/b1.txt" -size=-45
+
+#RECURSIVO
+mkfile -r -path=/home/archivos/user/docs/usac/archivos/proyectos/fase1/entrada.txt
+
+cat -file1=/home/archivos/user/docs/Tarea2.txt
+cat -file1=/home/archivos/user/docs/Tarea3.txt
