@@ -184,6 +184,8 @@ function Consola() {
     }
 
     try {
+      console.log(API_ENDPOINTS.analizar)
+      console.log(API_BASE_URL)  
       const response = await fetch( API_ENDPOINTS.analizar, {
         method: 'POST',
         headers: {

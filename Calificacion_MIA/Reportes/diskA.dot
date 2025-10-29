@@ -1,0 +1,14 @@
+digraph G {
+		fontname="Helvetica,Arial,sans-serif"
+		node [fontname="Helvetica,Arial,sans-serif"]
+		edge [fontname="Helvetica,Arial,sans-serif"]
+		concentrate=True;
+		rankdir=TB;
+		node [shape=record];
+
+		title [label="Reporte DISK" shape=plaintext fontname="Helvetica,Arial,sans-serif"];
+
+		dsk [label="{MBR}|{Primaria Part1\n33.33%}|{Primaria Part2\n16.67%}|Libre 50.00%"];
+
+		title -> dsk [style=invis];
+	}
