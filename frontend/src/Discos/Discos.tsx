@@ -30,7 +30,7 @@ export const Discos: React.FC = () => {
     const [cargando, setCargando] = useState(true);
     const [error, setError] = useState<string>('');
 
-    const API_BASE_URL = 'http://localhost:8080/';
+    const API_BASE_URL = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
         obtenerArchivos();

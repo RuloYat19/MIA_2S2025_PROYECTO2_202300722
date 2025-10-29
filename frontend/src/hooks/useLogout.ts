@@ -15,7 +15,7 @@ export const useLogout = () => {
     setMessageType(""); 
     try {
       // Realizar la solicitud al backend para enviar el comando logout
-      const apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:8080';
+      const apiUrl = import.meta.env.VITE_API_URL;
       console.log('Logout -> calling API at', apiUrl);
       const response = await fetch(`${apiUrl}/validarCerrarSesion`, {
         method: "POST",

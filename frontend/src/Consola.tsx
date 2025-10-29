@@ -4,6 +4,7 @@ import { useLogin } from "./hooks/useLogin";
 import { useLogout } from "./hooks/useLogout";
 import { useAuth } from "./hooks/useAuth"
 import { Discos } from "./Discos/Discos"
+import { API_BASE_URL } from './config/api';
 
 function Consola() {
   const [text, setText] = useState('');
@@ -183,7 +184,7 @@ function Consola() {
     }
 
     try {
-      const response = await fetch('http://localhost:8080/analizar', {
+      const response = await fetch(`${API_BASE_URL}/analizar`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -12,7 +12,7 @@ export const useLogin = () => {
 
     try {
 
-      const apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:8080';
+      const apiUrl = import.meta.env.VITE_API_URL;
       console.log('Login -> calling API at', apiUrl);
       const response = await fetch(`${apiUrl}/validarInicioSesion`, {
         method: "POST",

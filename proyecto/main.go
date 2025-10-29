@@ -90,7 +90,7 @@ func main() {
 	http.HandleFunc("/directory-tree", controladorSistemaArchivos)
 
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"http://127.0.0.1:5173", "http://localhost:5173"},
+		AllowedOrigins:   []string{"http://127.0.0.1:5173", "http://localhost:5173", "http://bucketmiap2raul202300722.s3-website.us-east-2.amazonaws.com"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE"},
 		AllowedHeaders:   []string{"Content-Type", "Authorization"},
 		AllowCredentials: true,

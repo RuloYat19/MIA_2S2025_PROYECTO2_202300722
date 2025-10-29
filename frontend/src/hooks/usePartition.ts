@@ -12,7 +12,7 @@ export const usePartitions = () => {
         setRespuesta("");
 
         try {
-            const apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:8080';
+            const apiUrl = import.meta.env.VITE_API_URL;
             console.log("Enviando solicitud con la partición:", idParticion);
             
             const response = await fetch(`${apiUrl}/validarParticionEnInicioSesion`, {
