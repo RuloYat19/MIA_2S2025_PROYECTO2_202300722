@@ -21,7 +21,7 @@ RUN go build -o main .
 FROM alpine:latest
 
 # Instalar dependencias necesarias para runtime
-RUN apk --no-cache add ca-certificates bash
+RUN apk --no-cache add ca-certificates
 
 # Crear un usuario no-root para mayor seguridad
 RUN adduser -D -g '' appuser
@@ -35,11 +35,7 @@ COPY --from=builder /app/Comandos ./Comandos
 COPY --from=builder /app/Globales ./Globales
 COPY --from=builder /app/Structs ./Structs
 
-# Copiar el script shell y dar permisos de ejecución
-COPY b.sh .
-RUN chmod +x b.sh
-
-# Crear la estructura de directorios que necesita el script
+# Crear la estructura de directorios que necesita la aplicación
 RUN mkdir -p /home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Discos && \
     mkdir -p /home/ubuntu/MIA_2S2025_PROYECTO2_202300722/Calificacion_MIA/Reportes && \
     mkdir -p /home/ubuntu/MIA_2S2025_PROYECTO2_202300722/proyecto
@@ -53,5 +49,5 @@ USER appuser
 # Exponer el puerto que usa la aplicación
 EXPOSE 8080
 
-# Ejecutar el script de limpieza y luego la aplicación
-CMD ["sh", "-c", "./b.sh && ./main"]
+# Comando para ejecutar la aplicación directamente
+CMD ["./main"]
